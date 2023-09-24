@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Routes files */
+    "baseUrl": "src",
+    "paths": {
+      "@molecules": ["common/components/molecules/index"],
+      "@organisms": ["common/components/organisms/index"],
+      "@layouts": ["common/components/layouts/index"],
+      "@atoms/*": ["common/components/atoms/*"],
+      "@interfaces/*": ["common/interfaces/*"],
+      "@constants/*": ["common/constants/*"],
+      "@slices/*": ["common/store/slices/*"],
+      "@schemas": ["common/schemas/index"],
+      "@wrappers/*": ["common/wrappers/*"],
+      "@services/*": ["common/services/*"],
+      "@helpers/*": ["common/helpers/*"],
+      "@routes/*": ["common/routes/*"],
+      "@hooks/*": ["common/hooks/*"],
+      "@libs/*": ["common/libs/*"],
+
+      "@modules/*": ["modules/*"],
+
+      "@styles/*": ["styles/*"],
+
+      "@pages/*": ["pages/*"]
+
+      // "@organisms/*": ["common/components/organisms/*"],
+      // "@molecules/*": ["common/components/molecules/*"],
+      // "@atoms/*": ["common/components/atoms/*"],
+      // "@components/*": ["common/components/*"],
+      // "@interfaces/*": ["common/interfaces/*"],
+      // "@constants/*": ["common/constants/*"],
+      // "@contexts/*": ["common/contexts/*"],
+      // "@services/*": ["common/services/*"],
+      // "@helpers/*": ["common/helpers/*"],
+      // "@assets/*": ["common/assets/*"],
+      // "@helper/*": ["common/helper/*"],
+      // "@hooks/*": ["common/hooks/*"],
+      // // "@redux/*": ["common/state/*"],
+      // // "@data/*": ["common/data/*"],
+      // "@modules/*": ["modules/*"],
+      // // "@api/*": ["common/api/*"],
+      // "@styles/*": ["styles/*"],
+      // "@pages/*": ["pages/*"]
+    }
+  },
+  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
