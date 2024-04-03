@@ -1,7 +1,10 @@
 {
-  "name": "github-project",
+  "name": "juan-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "My component library",
+  "author": "Juan Francia",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
